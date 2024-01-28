@@ -5,10 +5,12 @@ require('dotenv').config({ path: './.env.development.local' });
 
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.bundle.js',
+        filename: `[name].js`,
     },
     plugins: [
         new HtmlWebpackPlugin({ template: './src/index.html' }),
