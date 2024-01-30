@@ -11,5 +11,9 @@
 
 ## backend 
 - udpate `connectionString` inside server.js 
-- add origin: 'chrome-extension://aobdobofgmceopekcehnnmnbcbjdhkmj', // add chrome estension url
+- add origin: 'chrome-extension://{id}', // add chrome estension url
 - run `npm i && npm start`
+
+## frontend inside backend
+- run `npm i && npm start`
+- replace your login id inside `index.js` at line 8 `<GoogleOAuthProvider clientId='replace-your-id'>`
