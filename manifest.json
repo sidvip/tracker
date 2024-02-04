@@ -13,8 +13,8 @@
       }
     ],
     "oauth2": {
-      "client_id": "",
-      "scopes": ["https://www.googleapis.com/auth/contacts.readonly"]
+      "client_id": "1055700095897-ito3eol1ibnigsmhdtdt5jq2fv529udc.apps.googleusercontent.com",
+      "scopes": ["email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"]
     },
     "background": {
       "service_worker": "background.js",
@@ -24,6 +24,7 @@
         "webNavigation",
           "tabs",
           "history",
-          "identity"
+          "identity",
+          "storage"
       ]
   }

@@ -3,9 +3,17 @@
     <meta name="google-signin-client_id" content="1055700095897-lgjk30jutjg74n6sdcm2j7cv28nung2q.apps.googleusercontent.com">
   </head>
   <body>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
     <script src="./index.js"></script>
-    <h1>URL History Tracker</h1>
-    <a id="sign-in" onclick="onSignIn();" style="color:blue;cursor: pointer;">Sign In</a>
+    <div style="width: 300px;display: flex; justify-content: center;flex-direction: column;">
+      <h1>URL History Tracker</h1>
+      <div style="margin:10px 0px 10px 0px;" id="signed-in">
+        You are signed in
+      </div>
+      <div style="display: flex;justify-content: space-between;">
+        <a id="sign-in" style="color:blue;cursor: pointer;">Sign In</a>
+        <a id="sign-out" style="color:blue;cursor: pointer;">Sign Out</a>
+      </div>
+    </div>
   </body>
 </html>
