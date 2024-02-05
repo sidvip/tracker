@@ -1,8 +1,8 @@
 var xhttp = new XMLHttpRequest();
 
-chrome.storage.local.get("email", function (items) {
-    if (items?.email) {
-        chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+    chrome.storage.local.get("email", function (items) {
+        if (items?.email) {
             console.log("recieved message", message.greeting);
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
@@ -14,8 +14,8 @@ chrome.storage.local.get("email", function (items) {
             // document.getElementById("signed-in").style.display = "block";
             xhttp.open("GET", `https://tracker-server-w47v.onrender.com/add-url?email=${items?.email}&url=${message.greeting}`, true);
             xhttp.send();
-        });
-    }
+        }
+    });
 });
 
 window.onload = function () {
