@@ -25,6 +25,8 @@
           "tabs",
           "history",
           "identity",
-          "storage"
+          "storage",
+          "cookies", "https://accounts.google.com/",
+          "https://accounts.google.com/o/oauth2/token"
       ]
   }
